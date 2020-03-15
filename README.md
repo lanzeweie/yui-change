@@ -43,18 +43,18 @@ npm run build
 #### 文件结构
 `\src\scss\modules\`  css动画         `\src\scss\keyframes\` css动画时间点
 
-pc=pc端  sp=移动端  tablet=平板端    
+pc=pc端     sp=移动端    tablet=平板端    
 
 _developer-page.scss  主页面
 
-_load-view.scss  动画第一阶段
+_load-view.scss     动画第一阶段
 
 _motion-part1.scss  动画第二阶段
 
 _motion-part2.scss  动画第三阶段
 
-_top-page.scss  动画结束         
- 
+_top-page.scss      动画结束         
+
 其他配置
 _gallery-page.scss  _other-page.scss
 

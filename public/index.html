@@ -162,12 +162,12 @@
       </script>
          </div>
          <div class="header-info-app">  <!--一言app端-->
-          <p class=".header-info p" id="header">:获取中...</p>
+          <p class=".header-info p" id="heade">:获取中...</p>
        <script> 
              fetch('https://v1.hitokoto.cn?c=c&c=b&c=a')
               .then(response => response.json())
               .then(data => {
-              const hitokoto = document.getElementById('header');
+              const hitokoto = document.getElementById('heade');
               hitokoto.innerText = data.hitokoto+ " —— " +data.from+" ";  /*data.hitokoto+ "——" +data.from+"";  +号增加元素，"增加变量 "data.xx变量" "  */
                }).          
               catch(err => console.error(err));

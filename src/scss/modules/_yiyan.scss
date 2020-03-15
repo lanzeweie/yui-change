@@ -1,0 +1,44 @@
+/*一言*/
+.header-info {
+    width: 40%; /*宽度*/
+    margin: auto;
+    font-size: 14px;
+    color: #EAEADF;
+    background: rgba(0, 0, 0, 0.5); /*透明度*/
+    padding: 18px 20px;  /*内边距*/
+    margin-top: 22px;  /*外边距*/
+    letter-spacing: 0;
+    line-height: 30px;  /*高度*/
+    border-radius: 50px;  /*圆润度*/
+    bottom: 30px;
+    left: 30px; 
+    display: block;
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .header-info p {
+    margin: 4px; /*文字与边框的距离*/
+    font-size: 18px; /*字号*/
+    text-transform: uppercase;  /*属性控制文本的大小写 none 默认 capitalize 文本中的每个单词以大写字母开头 uppercase	定义仅有大写字母 lowercase	定义无大写字母，仅有小写字母*/
+    font-family:KaiTi;  /*样式*/
+    opacity:1;
+  }
+  
+  .header-info-app {
+    width: 80%; /*宽度*/
+    margin: auto;
+    font-size: 14px;
+    color: #EAEADF;
+    background: rgba(0, 0, 0, 0.5); /*透明度*/
+    padding: 14px 18px;  /*内边距*/
+    margin-top: 30px;  /*外边距*/
+    letter-spacing: 0;
+    line-height: 20px;  /*高度*/
+    border-radius: 23px;  /*圆润度*/
+    bottom: 30px;
+    left: 30px; 
+    display: block;
+    opacity: 0;
+    position: absolute;
+  }

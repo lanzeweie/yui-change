@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+  <head>   <!--国区-->
+    <meta charset="utf-8">
+    <title>测试</title>
+    <!--
+
+     修改 yui 的一个css动画项目
+
+    -->
+    -->  <!--og是一种新的HTTP头部标记-->
+    <meta name="description" content="云笔记本图片站">  <!--网站内容描述-->
+    <meta name="keywords" content="云笔记本头网站">  <!--keywords浏览器搜索关键词-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">  <!--viewport 就是当前显示给用户内容的窗口，你可以拖动或者放大缩小网页。-->
+    <meta property="og:url" content="网址"> <!--Meta Property=og标签，就是你同意了网页内容可以被其他社会化网站引用等如 fackbook-->
+    <meta property="og:image" content=""> <!--国外引用网站的标题图片-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="网站名字">
+    <meta property="og:site_name" content=""> <!--除去http://的网站名字？-->
+    <meta property="og:description" content="云笔记本图片站">
+    <meta property="og:locale" content="ja_JP"> <!--国家-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://yui.magical-girl.site" />
+    <meta name="twitter:title" content="网站名字" />
+    <meta name="twitter:description" content="『ありがと...バカ』" />
+    <meta name="twitter:image" content="" /> <!--国外引用网站的标题图片-->
+    <meta name="theme-color" content="#B56E96">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="https://yui.magical-girl.site/images/favicon.ico" /> <!--引用ico图标-->
+    <link rel="apple-touch-icon" href="https://yui.magical-girl.site/images/icons/icon.png" /> <!--大小-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/font.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53682384-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-53682384-9');
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(() => {})
+      }
+    </script>
+  </head>
+  <body>
+    <main id="root">
+      <!--*********************************** load-view (css动画)  **************************************-->
+      <div class="load-view">
+        <div class="load-view__bg">
+          <div class="inner">
+            <div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+        <div class="load-view__progress-bar">
+          <img class="icon" src="./images/load-view/load-icon.png" alt="第一个动画" />
+          <div class="progress-bar"><div></div></div>
+        </div>
+        <div class="load-view__windmill">
+          <div></div><div></div>
+        </div>
+        <div class="load-view__words">
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+          <div class="word"></div>
+        </div><!--已切除↓
+          <img class="content-name"         
+            src="./images/load-view/content-name.svg" 
+            alt="切除。"
+          />  -->
+        <div class="load-view__end">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div><!--  
+          <img class="char-name" src="./images/load-view/char-name.svg" alt="切除" />  -->
+        </div>
+      </div>
+      <!--*********************************** motion-part1 **************************************-->
+      <div class="motion-part1">
+        <div class="motion-part1__text motion-part1__text_type_1">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-part1__text motion-part1__text_type_2">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <img class="motion-part1__char"
+          src="./images/motion-part1/yui.svg"
+          alt="切除"
+        />
+        <img class="motion-part1__char-name"
+          src="./images/motion-part1/name.svg"
+          alt="切除"
+        />
+        <div class="motion-part1__end">
+          <div class="color-ball color-ball-pink"></div>
+          <div class="color-ball color-ball-blue"></div>
+          <div class="color-ball color-ball-yellow"></div>
+          <div class="color-ball color-ball-purple"></div>
+          <img class="say"
+            src="./images/motion-part1/say.svg"
+            alt="切除"
+          />
+          <div class="color-bg"></div>
+          <div class="color-ball color-ball-white"></div>
+        </div>
+      </div>
+      <!--*********************************** motion-part2 **************************************-->
+      <div class="motion-part2">
+        <div class="motion-part2__bg">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="motion-part2__scense motion-part2__scense_type_1">
+          <div class="char"></div>
+          <img class="say"
+            src="./images/motion-part2/say/1.svg"
+            alt="切除"
+          />
+        </div>
+        <div class="motion-part2__scense motion-part2__scense_type_2">
+          <div class="char"></div>
+          <img class="say"
+            src="./images/motion-part2/say/2.svg"
+            alt="切除"
+          />
+        </div>
+        <div class="motion-part2__paint motion-part2__paint_type_1">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-part2__paint motion-part2__paint_type_2">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-part2__end">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+      <!--*********************************** top-page **************************************-->
+      <!--页面选项-->
+      <article class="top-page">
+        <div class="top-page__bg"></div>
+        <div class="top-page__frame top-page__frame_type_1"></div>
+        <div class="top-page__yui"></div>
+        <div class="top-page__frame top-page__frame_type_2"></div>
+        <div class="header-info">  <!--一言-->
+	   	  <p class=".header-info p" id="header">:获取中...</p>
+			<script> 
+            fetch('https://v1.hitokoto.cn?c=c&c=b&c=a')
+             .then(response => response.json())
+             .then(data => {
+             const hitokoto = document.getElementById('header');
+             hitokoto.innerText = data.hitokoto+ " —— " +data.from+" ";  /*data.hitokoto+ "——" +data.from+"";  +号增加元素，"增加变量 "data.xx变量" "  */
+              }).          
+             catch(err => console.error(err));
+      </script>
+         </div>
+         <div class="header-info-app">  <!--一言app端-->
+          <p class=".header-info p" id="header">:获取中...</p>
+       <script> 
+             fetch('https://v1.hitokoto.cn?c=c&c=b&c=a')
+              .then(response => response.json())
+              .then(data => {
+              const hitokoto = document.getElementById('header');
+              hitokoto.innerText = data.hitokoto+ " —— " +data.from+" ";  /*data.hitokoto+ "——" +data.from+"";  +号增加元素，"增加变量 "data.xx变量" "  */
+               }).          
+              catch(err => console.error(err));
+       </script>
+          </div>
+        <div class="top-page__eye"></div>
+        <nav class="top-page__nav"> <!--主页面，打开副页面 title 对应 app.min.js-->
+          <a href="#" class="nav-li page-link" title="介绍">
+            <img src="./images/top-page/nav/1.png" alt="介绍" />
+          </a>
+          <a href="#" class="nav-li page-link" title="图片出处">
+            <img src="./images/top-page/nav/2.png" alt="图片出处" />
+          </a>
+          <a target="_blank" href="https://lanzeweie.github.io" class="nav-li" title="记录库">
+            <img src="./images/top-page/nav/3.png" alt="记录库" />
+          </a>
+        </nav>
+      </article>
+      <!--*********************************** other-page **************************************-->
+      <div class="other-page">
+        <div class="page">
+          <div class="close-btn"></div>
+          <section class="developer-page">
+            <div class="inner">
+              <h2 class="title">
+                <img src="./images/developer-page/label/1.png" alt="介绍" />
+              </h2>
+              <img class="icon" src="./images/yui540.png" alt="yui540" />
+              <h4 class="name">没名字</h4>
+              <p class="description">
+                 生活需要被记录<br />
+                 特此整一个网站来记录生活<br />
+               
+                 此网站就相当于一个“云笔记本”
+              </p>
+              <div class="sns-box">
+                <a class="fab fa-twitter" target="_blank" href="https://twitter.com/@lanzeweie1"></a>
+                <a class="fab fa-github" target="_blank" href="https://github.com/lanzeweie"></a>
+				        <a class="fa fa-envelope-1g" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=QS0gLzskNiQoJAEnLjksICgtbyIuLA"></a> 
+              </div>
+              <h2 class="title">
+                <img src="./images/developer-page/label/2.png" alt="感谢" />
+              </h2>
+              <p class="description">
+                 搭建网站的模板<br />
+                 借鉴了大佬们的创意<br />
+                 感谢这些大佬！！！
+              </p>
+              <div class="supporter-box">
+                 <p><span>日本大佬</span> <strong>yui540</strong></p>
+                 <p><strong>蝉时雨</strong><span>大佬</span></p>
+              </div>
+            </div>
+          </section>
+            <!--第二个标签页-->
+          <section class="gallery-page">
+            <div class="inner">
+              <h2 class="title">
+                <img src="./images/gallery-page/第二页面.png" alt="图片分享" />
+              </h2>
+              <p class="description">
+                 记录一些喜欢的图片<br />
+                 为此展示<br />
+              </p>
+              <div class="img-box">
+                 <a class="img" target="_blank" href="https://i.acg.blue:4443/images/2020/03/11/79962465.jpg"></a>
+                 <a class="img" target="_blank" href="https://i.acg.blue:4443/images/2020/03/03/78057099_p0.jpg"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/app.min.js"></script> <!--引用js  id调用-->
+  </body>
+</html>

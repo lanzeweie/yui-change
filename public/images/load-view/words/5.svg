@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="420" height="410" viewBox="0 0 420 410">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 354.167px;
+        filter: url(#filter);
+        font-family: KaiTi;
+      }
+    </style>
+    <filter id="filter" x="70" y="60" width="277" height="286" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="大" class="cls-1" x="14" y="333">大</text>
+</svg>
